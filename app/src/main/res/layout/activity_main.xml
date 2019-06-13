@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Selecciona Mes:" />
+
+    <Spinner
+        android:id="@+id/spnmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Seleciona Estado:" />
+
+    <Spinner
+        android:id="@+id/spnestado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"></Spinner>
+
+    <TextView
+        android:id="@+id/cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Selecciona cliente :" />
+
+    <Spinner
+        android:id="@+id/spnvisitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"></Spinner>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:columnCount="2"
+                android:rowCount="16">
+
+                <TextView
+                    android:id="@+id/visita"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:text="ID Visita"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/razonsocial"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Razón Social"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/idvisita"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:id="@+id/txtrzs"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" />
+                //hasta aqui perfecto
+
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:text="Teléfono :"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/personacontacto"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Persona de Contacto"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txttlf"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:id="@+id/txtpsc"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/direccion"
+                    android:layout_width="match_parent"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Dirección"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtdireccion"
+                    android:layout_width="match_parent"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:text="Fecha"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/hora"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Hora"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtfecha"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp" />
+
+                <TextView
+                    android:id="@+id/txthora"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Observaciones"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtobservaciones"
+                    android:layout_width="360dp"
+                    android:layout_height="75dp"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/estadovisita"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center"
+                    android:text="Estado Visita"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/estadoventa"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Estado Venta"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/txtestadovisita"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/txtestadoventa"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" />
+
+
+            </GridLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
